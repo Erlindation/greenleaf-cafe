@@ -1,42 +1,46 @@
 # Greenleaf Café Website Project Plan
 
 ## Project Overview
-Create a professional, ecological website for Greenleaf Café with HTML, CSS, and GitHub Pages.
+The goal of this project was to create a professional, ecological, and fully responsive website for Greenleaf Café, a local café known for its organic and vegan offerings. The site highlights the café’s mission, menu, products, and blog, while offering reservation and contact features—all built using HTML, CSS, and GitHub Pages.
 
 ## Roles and Responsibilities
-- **Web Designer**: Layout, colors, branding
-- **Front-End Developer**: Build with HTML and CSS
-- **Back-End Developer**: (Simulated) reservations and store logic
-- **Content Creator**: Blog, menu, and static content
-- **Project Manager**: Planning, tracking, and documentation
+- **Web Designer**: Defined the layout, color palette, and typography. I chose a green and white theme and a clean layout to reflect the café’s eco-friendly values.
+- **Front-End Developer**: Built the entire structure and styling using HTML5 and CSS3, ensuring a user-friendly interface across devices.
+- **Back-End Developer**: (Simulated) Implemented a reservation form and a product showcase for an online store. These simulate future backend functionality with a layout ready for real integration.
+- **Content Creator**: Wrote and structured all content including the blog post, menu descriptions, and contact details. I enjoyed crafting a narrative that makes this fictional café feel like a responsible, ethical e-commerce brand.
+- **Project Manager**: Managed the project timeline, tracked progress, and documented every step from initial planning to final deployment.
 
 ## Timeline
-| Date   -------| Task                             |
-|---------------|----------------------------------|
-| April 13-15   | Create GitHub repo, setup files  |
-| April 26–27   | HTML content structure           |
-| April 30      | Style with CSS                   |
-| May 1         | Test responsiveness              |
-| May 2         | Prepare slides and presentation  |
+| Date   -------| Task                                |
+|---------------|-------------------------------------|
+| April 13-15   | GitHub repo setup and project plan  |
+| April 26–27   | HTML content sections and layout    |
+| April 30      | CSS styling and visual design       |
+| May 1         | Responsive testing and refinement   |
+| May 2         | Final adjustments and presentation  |
 
 ## Tools Used
-- Git + GitHub
-- VS Code
-- HTML & CSS
-- GitHub Pages
+- Git + GitHub for version control and deployment
+- GitHub Pages for hosting
+- Visual Studio Code for coding and development
+- HTML5 + CSS3 for development of web technologies
 
 ## Deployment
-Use GitHub Pages:
-1. Push your code to a GitHub repo
-2. Go to Settings > Pages > choose `main` branch `/root`
-3. Your site will be live at: `https://yourusername.github.io/greenleaf-cafe/`
+Live at: https://erlindation.github.io/greenleaf-cafe/
+Deployment steps:
+1. Code pushed to GitHub repository
+2. GitHub Pages enabled from repository settings
+3. Project served from /main branch root
 
 ## What I Learned
-- How to structure a full static site
-- Writing accessible, clean HTML and CSS
-- Project planning and documentation
+- Building and structuring a complete website using only HTML and CSS
+- Ensuring mobile responsiveness with media queries
+- Organizing and writing relevant, engaging content
+- Managing a project with multiple roles and clear deadlines
+- Publishing and maintaining a website via GitHub Pages
+
 
 ## What I’d Improve Next Time
-- Add interactivity with JavaScript
-- Integrate form functionality (backend or JS simulation)
-- Work on accessibility and SEO
+- Add interactive features with JavaScript (e.g., dynamic reservation confirmation) since it's a skill still to be learned 
+- Improve accessibility and SEO metadata
+- Connect forms to actual backend services or APIs

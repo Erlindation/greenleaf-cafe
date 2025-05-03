@@ -1,12 +1,106 @@
-<!-- Reto_HTML.html: My organic coffee place -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Greenleaf Café</title>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Responsive Layout Enhancements */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    section {
+      background-color: white;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75em;
+    }
+
+    input, textarea, button {
+      padding: 0.5em;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      main {
+        padding: 1em;
+      }
+
+      input, textarea {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Greenleaf Café</h1>
@@ -20,7 +114,7 @@
       </ul>
     </nav>
   </header>
-  
+
   <main>
     <section id="menu">
       <h2>Our Ecological Menu</h2>
@@ -49,16 +143,35 @@
 
     <section id="reservations">
       <h2>Reserve a Table</h2>
-      <p>Email us at <a href="mailto:reserve@greenleaf.com">reserve@greenleaf.com</a> to book your spot!</p>
+      <form action="mailto:reserve@greenleaf.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+
+        <button type="submit">Book Now</button>
+      </form>
     </section>
 
     <section id="store">
       <h2>Shop Our Products</h2>
       <ul>
         <li>Organic Coffee Beans (Unroasted)</li>
-        <li>Handmade Vegan Pastries</li>
+        <li>Homemade Sauces</li>
         <li>Reusable Eco Mugs</li>
+        <li>Greenleaf T-Shirts</li>
       </ul>
+      <p>Coming soon: online checkout with delivery options!</p>
     </section>
 
     <section id="blog">
@@ -79,6 +192,21 @@
       <p>Address: 123 Organic St, Downtown</p>
       <p>Phone: (555) 123-4567</p>
       <p>Email: <a href="mailto:contact@greenleaf.com">contact@greenleaf.com</a></p>
+      <form>
+        <label for="contact-name">Name:</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Follow us:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/greenleafcafe" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/greenleafcafe" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/greenleafcafe" target="_blank">Twitter</a></li>
+      </ul>
     </section>
   </main>
 
@@ -86,4 +214,5 @@
     <p>&copy; 2025 Greenleaf Café</p>
   </footer>
 </body>
+
 </html>
